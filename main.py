@@ -6,3 +6,5 @@ class Point:
 point1 = Point(10, 20)
 
 print(type(point1))
+print(point1)
+print(Point)
