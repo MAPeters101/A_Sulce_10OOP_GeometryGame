@@ -34,20 +34,20 @@ class GUIRectangle(Rectangle):
 
         # Draw a rectangle
         canvas.pendown()
-        canvas.forward(100)
+        canvas.forward(self.point2.x - self.point1.x)
         canvas.left(90)
-        canvas.forward(200)
+        canvas.forward(self.point2.y - self.point1.y)
         canvas.left(90)
-        canvas.forward(100)
+        canvas.forward(self.point2.x - self.point1.x)
         canvas.left(90)
-        canvas.forward(200)
+        canvas.forward(self.point2.y - self.point1.y)
         canvas.left(90)
 
         turtle.done()
 
 
-gui_rectangle = GUIRectangle(Point(randint(0, 400), randint(0, 400)),
-                Point(randint(10, 400), randint(10, 400)))
+gui_rectangle = GUIRectangle(Point(randint(0, 300), randint(0, 300)),
+                Point(randint(10, 300), randint(10, 300)))
 
 myTurtle = turtle.Turtle()
 
